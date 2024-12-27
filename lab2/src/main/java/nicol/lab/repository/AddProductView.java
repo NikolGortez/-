@@ -26,6 +26,18 @@ public class AddProductView extends JFrame {
     }
 
     public AddProductView(MainView view) {
+        setTitle("Добавить продукт");
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setSize(400, 300);
+        setLayout(new GridLayout(4, 2));
+
+        add(new JLabel("Название:"));
+        add(nameField);
+        add(new JLabel("Описание:"));
+        add(descriptionField);
+        add(new JLabel("Цена:"));
+        add(priceField);
+        add(saveButton);
     }
 
     public String getName() {
